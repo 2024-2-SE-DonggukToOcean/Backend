@@ -7,9 +7,14 @@ assignees: ''
 
 ---
 
-| **Name**                         | **About**                   | **Title**           | **Labels** | **Assignees** |
-|----------------------------------|-----------------------------|----------------------|------------|---------------|
-| "[ Feature ] - Feature request"  | "✨ Feature Template"       | "[ Feature ] -"     | feature ✨  |               |
+---
+name: "[  Bug ] - Bug report"
+about: "❗ Bug Template"
+title: "[ Bug ] - "
+labels: bug ❗
+assignees: ''
+
+---
 
 ## 🛠️ 계획된 개발 기능
 어떠한 기능 / 화면을 만드는지 적습니다.
