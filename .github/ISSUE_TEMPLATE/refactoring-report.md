@@ -1,17 +1,8 @@
 ---
 name: Refactoring report
 about: "\U0001F3A8 Refactor Template"
-title: ''
-labels: ''
-assignees: ''
-
----
-
----
-name: "[ Refactor ] - Refactoring request"
-about: "🎨 Refactor Template"
 title: "[ Refactor ] - "
-labels: "refactor 🎨"
+labels: "refactor \U0001F3A8"
 assignees: ''
 
 ---

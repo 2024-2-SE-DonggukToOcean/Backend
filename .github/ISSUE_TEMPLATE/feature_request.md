@@ -1,15 +1,6 @@
 ---
 name: Feature request
 about: "✨ Feature Template"
-title: ''
-labels: ''
-assignees: ''
-
----
-
----
-name: "[ Feature ] - Feature request"
-about: "✨ Feature Template "
 title: "[ Feature ] - "
 labels: feature ✨
 assignees: ''

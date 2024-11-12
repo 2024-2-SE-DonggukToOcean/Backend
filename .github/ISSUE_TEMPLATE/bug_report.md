@@ -1,15 +1,6 @@
 ---
 name: Bug report
 about: "❗ Bug Template"
-title: ''
-labels: ''
-assignees: ''
-
----
-
----
-name: "[  Bug ] - Bug report"
-about: "❗ Bug Template"
 title: "[ Bug ] - "
 labels: bug ❗
 assignees: ''
