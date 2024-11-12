@@ -1,6 +1,6 @@
 ---
 name: Refactoring report
-about: Describe this issue template's purpose here.
+about: "\U0001F3A8 Refactor Template"
 title: ''
 labels: ''
 assignees: ''
@@ -9,9 +9,9 @@ assignees: ''
 
 ---
 name: "[ Refactor ] - Refactoring request"
-about: "\U0001F3A8 Refactor Template"
+about: "🎨 Refactor Template"
 title: "[ Refactor ] - "
-labels: "refactor \U0001F3A8"
+labels: "refactor 🎨"
 assignees: ''
 
 ---

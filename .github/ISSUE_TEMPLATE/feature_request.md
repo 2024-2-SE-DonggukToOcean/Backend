@@ -1,6 +1,6 @@
 ---
 name: Feature request
-about: Suggest an idea for this project
+about: "✨ Feature Template"
 title: ''
 labels: ''
 assignees: ''
@@ -8,10 +8,10 @@ assignees: ''
 ---
 
 ---
-name: "[  Bug ] - Bug report"
-about: "❗ Bug Template"
-title: "[ Bug ] - "
-labels: bug ❗
+name: "[ Feature ] - Feature request"
+about: "✨ Feature Template "
+title: "[ Feature ] - "
+labels: feature ✨
 assignees: ''
 
 ---
