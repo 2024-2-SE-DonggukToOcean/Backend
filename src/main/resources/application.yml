@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://svc.sel5.cloudtype.app:32379/dto_db
+    username: root
+    password: teamdto1119
+    driver-class-name: org.postgresql.Driver
+  mybatis:
+    mapper-locations: classpath:/mapper/**/*.xml
+    type-aliases-package: com.example.dongguktoocean.dto
