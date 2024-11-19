@@ -31,10 +31,10 @@ data class InvoiceDoc(
     val ship: String, // 선박명
 
     @Column(nullable = false)
-    val pol: String, // 선적항
+    val load_port: String, // 선적항
 
     @Column(nullable = false)
-    val pod: String, // 목적항
+    val dest_port: String, // 목적항
 
     @Column(nullable = false)
     val sender: String, // 송신자
