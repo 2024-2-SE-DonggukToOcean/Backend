@@ -3,7 +3,7 @@ package com.example.dongguktoocean.domain
 import jakarta.persistence.*
 
 @Entity
-@Table(name = "DocumentList")
+@Table(name = "Document_List")
 data class DocumentList(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

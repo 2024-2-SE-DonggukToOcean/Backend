@@ -3,7 +3,7 @@ import jakarta.persistence.*
 
 
 @Entity
-@Table(name = "InvoiceDoc")
+@Table(name = "Invoice_Doc")
 data class InvoiceDoc(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
