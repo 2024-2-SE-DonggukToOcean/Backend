@@ -11,10 +11,13 @@ import org.springframework.web.bind.annotation.*
 @RequestMapping("/api/v1/user")
 class InvoiceDocController(private val invoiceDocService: InvoiceDocService) {
 
-    @PostMapping("/sendfile")
-    fun createInvoiceDoc(@RequestBody request: InvoiceDocRequest): ResponseEntity<ResponseDto<Nothing>> {
+    @PostMapping("/sendfile/{id}")
+    fun createInvoiceDoc(
+        @RequestBody request: InvoiceDocRequest,
+        @PathVariable id : Long
+    ): ResponseEntity<ResponseDto<Nothing>> {
         return try {
-            invoiceDocService.createInvoiceDoc(request) // 서비스 실행
+            invoiceDocService.createInvoiceDoc(id, request) // 서비스 실행
 
             ResponseDto.success(null) // 성공 응답
         } catch (e: IllegalArgumentException) {
