@@ -14,7 +14,7 @@ class SecurityConfig {
         }.httpBasic { basic ->
             basic.disable() // HTTP Basic 인증 비활성화
         }.authorizeHttpRequests { auth ->
-            auth.requestMatchers("/api/v1/**").permitAll() // /api/v1/** 경로 허용
+            auth.requestMatchers("/**").permitAll() // /** 경로 허용
             auth.anyRequest().authenticated() // 그 외 모든 요청은 인증 필요
         }
         return http.build()
