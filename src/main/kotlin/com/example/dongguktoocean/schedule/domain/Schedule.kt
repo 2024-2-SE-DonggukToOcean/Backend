@@ -26,5 +26,8 @@ data class Schedule(
     val departureTime: String,
 
     @Column(nullable = false)
-    val arrivalTime: String
+    val arrivalTime: String,
+
+    @Column(nullable = true)
+    val shippingCompany: String
 )
