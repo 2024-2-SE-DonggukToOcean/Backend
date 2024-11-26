@@ -1,10 +1,7 @@
 package com.example.dongguktoocean.schedule.controller
 
 //import com.example.dongguktoocean.schedule.dto.ScheduleUploadResponseDto
-import com.example.dongguktoocean.schedule.dto.ScheduleUploadResponseDto
-import com.example.dongguktoocean.schedule.dto.SearchRequestDto
-import com.example.dongguktoocean.schedule.dto.SearchResponseDto
-import com.example.dongguktoocean.schedule.dto.UploadRequestDto
+import com.example.dongguktoocean.schedule.dto.*
 //import com.example.dongguktoocean.schedule.dto.UploadRequestDto
 import com.example.dongguktoocean.schedule.service.ShipScheduleService
 import org.springframework.http.ResponseEntity
@@ -24,5 +21,13 @@ class ShipScheduleController(
     fun uploadSchedule(@RequestBody request: UploadRequestDto): ScheduleUploadResponseDto {
         return service.uploadSchedule(request)
     }
+    @GetMapping("/list/{shipping_company_id}")
+    fun getSchedulesByCompanyId(
+        @PathVariable shipping_company_id: Long
+    ): List<ShipScheduleResponseDto> {
+        return service.getSchedulesByCompanyId(shipping_company_id)
+    }
+
+
 }
 

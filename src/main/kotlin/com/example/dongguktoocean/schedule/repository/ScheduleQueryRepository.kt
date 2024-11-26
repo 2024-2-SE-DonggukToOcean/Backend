@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface ScheduleQueryRepository : JpaRepository<Schedule, Long> {
-    // shippingCompany로 ShipSchedule 조회
+    // shippingCompany로 Schedule 조회
     fun findByShippingCompany(shippingCompany: String): List<Schedule>
 }
