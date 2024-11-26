@@ -1,7 +1,7 @@
 package com.example.dongguktoocean.schedule.dto
 
 data class UploadRequestDto(
-    val shipCode: String,
+    val ship_id: Long,
     val captain: String,
     val loadingPort: String,
     val destinationPort: String,
