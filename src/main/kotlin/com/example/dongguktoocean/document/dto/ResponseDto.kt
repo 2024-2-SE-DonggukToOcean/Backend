@@ -13,7 +13,7 @@ data class ResponseDto<T>(
             return ResponseEntity.ok(ResponseDto(isSuccess = true, responseDto = data))
         }
 
-        fun error(status: HttpStatus, message: String): ResponseEntity<ResponseDto<Nothing>> {
+        fun <T> error(status: HttpStatus, message: String): ResponseEntity<ResponseDto<T>> {
             return ResponseEntity
                 .status(status)
                 .body(ResponseDto(isSuccess = false, error = ExceptionDto(message)))
