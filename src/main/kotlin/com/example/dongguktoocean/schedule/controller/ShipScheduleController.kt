@@ -1,11 +1,13 @@
 package com.example.dongguktoocean.schedule.controller
 
 //import com.example.dongguktoocean.schedule.dto.ScheduleUploadResponseDto
+import com.example.dongguktoocean.document.dto.ResponseDto
 import com.example.dongguktoocean.schedule.dto.*
 //import com.example.dongguktoocean.schedule.dto.UploadRequestDto
 import com.example.dongguktoocean.schedule.service.ShipScheduleService
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
+import org.springframework.http.HttpStatus
 
 @RestController
 @RequestMapping("/schedule")
@@ -24,8 +26,13 @@ class ShipScheduleController(
     @GetMapping("/list/{shipping_company_id}")
     fun getSchedulesByCompanyId(
         @PathVariable shipping_company_id: Long
-    ): List<ShipScheduleResponseDto> {
-        return service.getSchedulesByCompanyId(shipping_company_id)
+    ): ResponseEntity<ResponseDto<List<ShipScheduleResponseDto>>> {
+        return try {
+            val response = service.getSchedulesByCompanyId(shipping_company_id)
+            ResponseDto.success(response)
+        } catch (e: IllegalArgumentException) {
+            ResponseDto.error(HttpStatus.BAD_REQUEST, e.message ?: "Invalid request")
+        }
     }
 
 
